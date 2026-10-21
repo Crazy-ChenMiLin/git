@@ -12,7 +12,12 @@ def calc_total(price, quantity):
 
 def is_over_limit(amount):
     """是否超过采购上限"""
-    return amount > Decimal("50000")
+    return amount >= Decimal("50000")
+
+
+def calc_discount(amount, rate):
+    """计算折扣后金额（feature 分支新增）"""
+    return amount * (1 - Decimal(str(rate)))
 
 
 def format_amount(amount):

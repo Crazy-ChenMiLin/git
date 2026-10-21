@@ -12,7 +12,7 @@ def calc_total(price, quantity):
 
 def is_over_limit(amount):
     """是否超过采购上限"""
-    return amount > Decimal("50000")
+    return amount > Decimal("80000")
 
 
 def format_amount(amount):
